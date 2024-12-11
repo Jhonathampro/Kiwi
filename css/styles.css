@@ -1,0 +1,143 @@
+* {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-green: #03e278;
+  --color-fadeblack: #0000008a;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  background: rgb(5,110,60);
+  background: radial-gradient(circle, rgba(5,110,60,1) 0%, rgba(2,34,20,1) 50%, rgba(0,0,0,1) 100%);
+  cursor: url(../images/hand-robot.gif), default;
+  color: var(--color-white);
+}
+
+::selection{
+  background-color: var(--color-green);
+}
+
+.my-nav a{
+  color: #ffffff;
+}
+
+.my-nav a:hover{
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+#title-nav{
+  font-size: 1.6rem;
+}
+
+.hero-text{
+  width: 50%;
+}
+
+#title-hero{
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+#p-hero{
+  font-size: 2rem;
+}
+
+#img-hero{
+  max-width: 45rem;
+}
+
+#img-hero:hover{
+  scale: 1.02;
+}
+
+.my-carousel{
+  max-width: 80rem;
+} 
+
+.my-carousel img{
+  max-width: 80rem;
+}
+
+.team img{
+  height: 12.8rem;
+  border-radius: 10rem;
+}
+
+.card{
+  background-color: var(--color-green);
+  border-radius: 1.5rem;
+}
+
+.video{
+  width: 80%;
+  height: 30rem;
+}
+
+footer{
+  width: 100%;
+  height: 30vh;
+  background-color: var(--color-fadeblack);
+}
+
+@media (max-width: 768px) {
+  #title-hero{
+    font-size: 2rem;
+  }
+
+  #p-hero{
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1.4rem;
+  }
+
+  #img-hero{
+    max-width: 25rem;
+  }
+  .hero-text{
+    width: 100%;
+  }
+  .video{
+    height: 24rem;
+  }
+  ul{
+    width: 20rem;
+  }
+  .my-carousel{
+    max-width: 40rem;
+  } 
+  
+  .my-carousel img{
+    max-width: 40rem;
+  }
+
+}
+
+@media (max-width: 420px) {
+  #title-hero{
+    font-size: 1.8rem;
+  }
+
+  #p-hero{
+    font-size: 1.3rem;
+  }
+  .my-carousel{
+    max-width: 26.6rem;
+  } 
+  
+  .my-carousel img{
+    max-width: 26.6rem;
+  }
+
+}

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Importando a fonte do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+    <!-- CDN - Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Icon do navegador -->
+    <link rel="shortcut icon" type="imagex/png" href="images/kiwi.ico">
+    <title>Kiwi King</title>
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg my-nav p-4 m-4" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="title-nav">Kiwi King</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#images">Imagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#arm">Sistema de armas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#component">Componentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#videos">Vídeos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Nossa equipe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <div class="container-fluid d-flex mt-5 justify-content-around flex-lg-row flex-column align-items-center">
+          <div class="hero-text d-flex flex-column justify-content-center ps-lg-5 align-items-center text-center text-lg-start">
+           <h1 id="title-hero">KIWI KING</h1>
+            <p id="p-hero">Prepare-se para testemunhar a grandeza de um rei! Kiwi King é o nosso projeto para a ROBOCUP 2024, equipado com Arduino, sensores, LEDs e motores, ele veio para desafiar todas as expectativas e alcançar o topo!</p>
+          </div>
+          <img src="images/animated-robot.png" alt="Robô animado" id="img-hero">
+        </div>
+        <div class="d-flex justify-content-center pb-4 mt-5 mb-5">
+          <a href="#robot"><i class="fa-solid fa-arrow-down" style="color: #ffffff; font-size: 2rem;"></i></a>
+        </div>
+
+        <div class="container text-center pt-5" id="robot">
+          <h2>Conheça nosso Robô</h2>
+          <div class="row mt-3">
+            <div class="col-md-4 col-xs-12 ">
+              <div class="container d-flex flex-column align-items-center">
+                <div class="card p-2" style="width: 6rem;">
+                  <img src="./images/sword.png" alt="Imagem de espada">
+                </div>
+                <div>
+                  <h3>Bravo</h3>
+                  <p>Pronto para enfrentar seus oponentes</p>
+                </div>
+              </div> 
+            </div>
+            <div class="col-md-4 col-xs-12 ">
+              <div class="container d-flex flex-column align-items-center">
+                <div class="card p-2" style="width: 6rem;">
+                  <img src="./images/lightning.png" alt="Imagem de raio">
+                </div>
+                <div>
+                  <h3>Rápido</h3>
+                  <p>Ágil e veloz</p>
+                </div>
+              </div> 
+            </div>
+            <div class="col-md-4 col-xs-12 ">
+              <div class="container d-flex flex-column align-items-center">
+                <div class="card p-2" style="width: 6rem;">
+                  <img src="./images/shield.png" alt="Imagem de escudo">
+                </div>
+                <div>
+                  <h3>Forte</h3>
+                  <p>Resistente e eficaz nas batalhas</p>    
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <div class="my-carousel container d-flex justify-content-center mt-5 mb-5" id="images">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/kiwi.jpeg" class="d-block" alt="Foto do nosso robô Kiwi de frente">
+              </div>
+              <div class="carousel-item">
+                <img src="images/kiwi-2.png" class="d-block" alt="Kiwi com a arma desativada">
+              </div>
+              <div class="carousel-item">
+                <img src="images/kiwi-3.png" class="d-block" alt="Kiwi com a arma ativada">
+              </div>
+              <div class="carousel-item">
+                <img src="images/kiwi-4.png" class="d-block" alt="Foto do Kiwi por dentro">
+              </div>
+              <div class="carousel-item">
+                <img src="images/kiwi-5.png" class="d-block" alt="Foto com vista de cima do Kiwi">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container d-flex justify-content-center mt-5" id="arm">
+          <h3>Sistema de armas</h3>
+        </div>
+       
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-column align-items-center">
+                <img src="images/weapon-disabled.png" alt="Ícone de espada" style="height: 20rem">
+                <h4>Arma desativada</h4>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-column align-items-center">
+                <img src="images/weapon-activated.png" alt="Ícone de espada" style="height: 20rem">
+                <h4>Arma ativada</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container d-flex justify-content-center text-center mt-4">
+          <p>O funcionamento da nossa arma é através de servo motores, quando eles são ativados (por meio de sensores de impacto da frente do robô) nossa arma gira 180°, projetando-a para frente, para assim, estourar a bexiga dos nossos adversários</p>
+        </div>
+
+
+        <div class="container d-flex justify-content-center mt-5" id="component">
+          <h3>Componentes</h3>
+        </div>
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-column align-items-center">
+                <ul>
+                  <li>Arduino Mega</li>
+                  <li>Motor DC</li>
+                  <li>Servo Motor MG995</li>
+                  <li>Driver Ponte H</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-column align-items-center">
+                <ul>
+                  <li>Protoboard</li>
+                  <li>Módulo hc-06</li>
+                  <li>Chave Alavanca</li>
+                  <li>MDF</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-3" id="videos">
+          <h3>Vídeos</h3>
+        </div>
+        
+        <div class="d-flex mt-4 justify-content-center flex-md-row flex-column align-items-center">
+          <div class="container d-flex flex-md-row flex-column align-items-center">
+            <div class="video ratio ratio-4x3 m-3">
+              <iframe src="https://www.youtube.com/embed/I_U1jVPlQfo?si=Ztp7pXrTG3yeYDlg" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video ratio ratio-4x3 m-3">
+              <iframe src="https://www.youtube.com/embed/RnuQwMlxovg?si=DqemVGOfwk_2-6eY" title="YouTube video" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+          
+          
+        <div class="team container mt-5 mb-5" id="team">
+          <div class="row">
+            <div class="d-flex justify-content-center mb-3">
+              <h3>Conheça nossa equipe</h3>
+            </div>
+            <div class="col-lg col-sm-4 col-xs-12 d-flex flex-column align-items-center">
+              <img src="images/member1.png" alt="">
+              <p>Frederico Nakayama</p>
+            </div>
+            <div class="col-lg col-sm-4 col-xs-12 d-flex flex-column align-items-center">
+              <img src="images/member2.png" alt="">
+              <p>Jhonatham Jesus</p>
+            </div>
+            <div class="col-lg col-sm-4 col-xs-12 d-flex flex-column align-items-center">
+              <img src="images/member3.png" alt="">
+              <p>João Pedro Pilon</p>
+            </div>
+            <div class="col-lg col-sm-6 col-xs-12 d-flex flex-column align-items-center">
+              <img src="images/member4.png" alt="">
+              <p>Juliana Silva</p>
+            </div>
+            <div class="col-lg col-sm-6 col-xs-12 d-flex flex-column align-items-center">
+              <img src="images/member5.png" alt="">
+              <p>Matheus Martins</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="d-flex flex-column align-items-center mt-5 text-center">
+        <div class="d-flex justify-content-around" style="width: 80%;">
+          <div class="d-flex flex-column align-items-center pt-5 pb-5">
+            <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 4rem;"></i>
+            <p>@kiwi-king</p>
+          </div>
+          <div class="d-flex flex-column align-items-center pt-5 pb-5">
+            <i class="fa-solid fa-envelope" style="color: #ffffff; font-size: 4rem;"></i>
+            <p>kiwi-king@email.com</p>
+          </div>
+        </div>
+        <p>Todos os direitos reservados - 1SIA - 2024</p>
+      </footer>
+
+  <!-- Booststrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
